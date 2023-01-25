@@ -9,13 +9,12 @@
 }
 
 input{
-    /* ctrl+? = comment  */ 
-    /*ზედმეტია ეს ხაზი: padding-right:110px;  */
+
     padding-bottom:4px;
     margin-left:100px ;
     margin-top: 20px;
     background-color:#F2F3F4 ;
-    /*ზედმეტია ეს ხაზი: border-color: #C0C0CC; */
+
     border: 1px solid #C0C0CC;
     border-radius: 4px;
     width: 270px;
@@ -57,4 +56,62 @@ P{
     text-align: center;
     padding-top: 150px;
     font-size: 25px;
+}
+.list{
+    width: 560px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #693DF0;
+    margin-top: 30px;
+}
+
+.edit{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background:url(./icons/edit.png) ;
+    background-size: contain;
+    
+}
+
+.delete {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    background:url(./icons/delete.png) ;
+    background-size: contain;
+    
+}
+
+.CompletedMark{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background:url(./icons/done.png) ;
+    visibility: hidden;
+}
+.task-completed .CompletedMark{
+    visibility: visible;
+
+}
+.list h3 {
+    display: flex;
+    align-items: center;
+}
+.task-completed h3 {
+    text-decoration: line-through;
+}
+.messeges{
+    color: black;
+    margin-left: 100px;
+}
+.error{
+    color: red;
+}
+.sucsses {
+    color: green;
 }
