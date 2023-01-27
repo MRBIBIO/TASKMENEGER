@@ -1,4 +1,5 @@
 .boxmodel1{
+
     width:600px;
     height:200px;
     margin: 0 auto;
@@ -9,22 +10,21 @@
 }
 
 input{
-
     padding-bottom:4px;
     margin-left:100px ;
     margin-top: 20px;
     background-color:#F2F3F4 ;
-
     border: 1px solid #C0C0CC;
     border-radius: 4px;
     width: 270px;
     height: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
-
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    
     
 }
-
+.checkbox {
+    width: 15px !important;
+}
 body{
 
     background-color: #F2F3F4;
@@ -49,12 +49,11 @@ button
     padding-left: 10px;
 }
    
-   
+
 
 P{
     color:#514C5F;
     text-align: center;
-    padding-top: 150px;
     font-size: 25px;
 }
 .list{
@@ -64,8 +63,11 @@ P{
     padding: 0 20px;
     align-items: center;
     justify-content: space-between;
-    background-color: #693DF0;
+    background-color: #fff;
     margin-top: 30px;
+    border: 5px solid rgb(10, 10, 10);
+    border-radius: 10px;
+
 }
 
 .edit{
@@ -76,7 +78,18 @@ P{
     background-size: contain;
     
 }
-
+.edit1{
+    width: 435px;
+    height: 30px;
+    background-color:#645cff;
+    color: #f5f7ff;
+    border: none;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 30px;
+}
 .delete {
     display: inline-block;
     width: 48px;
@@ -105,13 +118,88 @@ P{
 .task-completed h3 {
     text-decoration: line-through;
 }
-.messeges{
+.messages{
     color: black;
     margin-left: 100px;
 }
 .error{
     color: red;
 }
-.sucsses {
+.success {
     color: green;
+    
+}
+body{
+    background-color:#f2f4f8;
+}
+
+section{
+    border: 2px solid red;
+    width: 500px;
+    height: 380px;
+    margin-left: 600px;
+    margin:auto;
+    margin-top: 100px;
+    background-color:#ffff;
+    border: none;
+    box-shadow: 5px 5px 5px #d4d6d9;
+}
+.tittle h1{
+    text-align: center;
+    font-weight: unset;
+    padding-top: 40px;
+}
+.taskid,
+.name,
+.completed{
+    display: flex;
+    
+}
+
+.taskid h3,
+.name h3,
+.completed h3{
+    margin-left: 30px;
+    margin-top: 21px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: normal;
+}
+.taskid p{
+    font-size: 20px;
+    margin-left: 105px;
+}
+.name p{
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color:#f2f4f8;
+    width: 230px;
+    height: 30px;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 140px;
+    padding-left: 15px;
+    padding-top: 7px;
+    border: none;
+    
+}
+.completed input{
+    margin-top: 20px;
+    margin-left: 85px;
+}
+
+.back button{
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.link{
+    color: #ffff;
+    text-decoration: none;
 }
